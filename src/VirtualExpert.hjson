@@ -1,0 +1,23 @@
+
+// This is the Human Readable JSON file for the Virtual Expert system. This is not automatically formatted at the moment
+// so it must be done through the command line.
+// After installing hjson globally via 'npm install hjson -g' you may convert this file to usable JSON by
+// opening a console at 'VirtualExpert/src' and using the command 'hjson -j VirtualExpert.hjson > VirtualExpert.json'
+// This will update the
+{
+  question: What department are you looking in?
+  smarthome: {
+    question: Are yuou a big boy?
+    yes: {
+
+
+    }
+    no: {
+
+    }
+
+  }
+  paint: {
+
+  }
+}

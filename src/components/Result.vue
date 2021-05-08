@@ -6,183 +6,7 @@
         <li>Feature 1</li>
         <li>fuuuc idk something</li>
         <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
-      </ul>
-    </div>
-  </div>
-  <div class="resultContainer">
-    <img src="../../images/placeholder.png" alt="">
-    <div class="features">
-      <ul>
-        <li>Feature 1</li>
-        <li>fuuuc idk something</li>
-        <li>some more cool shit</li>
-        <li>its like a butt but for dicc</li>
+        <li>its like a big butt</li>
       </ul>
     </div>
   </div>
@@ -200,9 +24,10 @@ export default {
   .resultContainer {
     width: 200px;
     height: 300px;
-    background: red;
     margin: 20px;
     position: relative;
+    overflow: hidden;
+    border-radius: 10px;
   }
 
   img {
@@ -215,15 +40,18 @@ export default {
   .features {
     width: 200px;
     height: 100px;
-    background: gray;
+    background: #333;
     position: absolute;
     bottom: 0px;
+    padding-top: 5px;
+    padding-left: 25px;
   }
   ul {
-    padding-left: 20px;
   }
 
   li {
-    padding-top: 6px;
+    font-family: "Mukta";
+    font-size: 18px;
+    line-height: 22px;
   }
 </style>

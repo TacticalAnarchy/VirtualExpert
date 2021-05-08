@@ -38,10 +38,14 @@
     height: 100%;
     background: #222222;
     line-height: 70px;
-    font-size: 40px;
+    font-size: 30px;
     padding-left: 20px;
     position: absolute;
     border-radius: 25px 0px 0px 25px;
+    font-family: "Mukta";
+    color: white;
+    outline: none;
+
   }
 
   button {
