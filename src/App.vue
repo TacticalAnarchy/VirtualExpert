@@ -1,18 +1,22 @@
 <template>
-  <h1>Hello World</h1>
+  <Welcome />
   <Search />
+  <Results />
 </template>
 
 <script>
 
-const color = '#333333';
-
 import Search from './components/Search'
+import Welcome from './components/Welcome'
+import Results from './components/Results'
+
 
 export default {
   name: 'App',
   components: {
     Search,
+    Welcome,
+    Results,
   },
 }
 </script>
@@ -21,5 +25,22 @@ export default {
 * {
   padding: 0px;
   margin: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+body {
+  background: #333333;
+  color: white;
+}
+
+#app {
+  position: absolute;
+  border: 2px solid black;
+  height: 80%;
+  width: 60%;
+  left: 20%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
 }
 </style>
