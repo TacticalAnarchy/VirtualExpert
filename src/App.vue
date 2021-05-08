@@ -1,22 +1,13 @@
 <template>
-  <Welcome />
-  <Search />
-  <Results />
+  <router-view></router-view>
 </template>
 
 <script>
-
-  import Search from './components/Search'
-  import Welcome from './components/Welcome'
-  import Results from './components/Results'
 
 
   export default {
     name: 'App',
     components: {
-      Search,
-      Welcome,
-      Results,
     },
   }
 </script>
