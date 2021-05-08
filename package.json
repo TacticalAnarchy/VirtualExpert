@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
     "hjson": "^3.2.2",
+    "mongodb": "^3.6.6",
     "vue": "^3.0.0",
     "vue-material-design-icons": "^4.11.0",
     "vue-router": "^3.5.1"
