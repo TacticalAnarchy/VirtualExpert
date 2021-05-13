@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import VirtualExpert from '../views/VirtualExpert'
 import Search from '../views/Search'
+import Admin from '../views/Admin'
 
 const routes = [
   {
@@ -13,8 +14,13 @@ const routes = [
     path: '/',
     alias: ['/Search'],
     name: 'Search',
-    component: Search,
+    component: Search
   },
+  {
+    path: '/admin',
+    name: 'Admin',
+    component: Admin
+  }
 ]
 
 const router = createRouter({

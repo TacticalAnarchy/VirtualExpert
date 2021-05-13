@@ -58,3 +58,13 @@ Open a new Window and traverse to the backend folder
 ```
 npx nodemon
 ```
+
+[x] Create Database
+
+[x] Setup admin page
+
+[] Test database interactions
+
+[] Admin page to manage all products
+
+[] Set global font-family
