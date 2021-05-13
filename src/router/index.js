@@ -7,13 +7,14 @@ const routes = [
   {
     path: '/VirtualExpert',
     name: 'VirtualExpert',
-    component: VirtualExpert
+    component: VirtualExpert,
   },
   {
     path: '/',
+    alias: ['/Search'],
     name: 'Search',
-    component: Search
-  }
+    component: Search,
+  },
 ]
 
 const router = createRouter({

@@ -1,21 +1,20 @@
 <template lang="html">
-  <Input />
-  <div class="welcomeText">
-    <h1>Virtual Expert</h1>
-    <p>The Virtual Expert is an online tool to assist you when serving a customer</p>
-  </div>
-  <router-link to="/">to Search</router-link>
+  <div class="container">
+    <div class="welcomeText">
+      <h1>Virtual Expert</h1>
+      <p>The Virtual Expert is an online tool to assist you when serving a customer</p>
+    </div>
 
-  <div class="question">
-    <h2>To get started, please select a Department:</h2>
+    <div class="question">
+      <h2>To get started, please select a Department:</h2>
+    </div>
   </div>
 </template>
 
 <script>
-  import Input from '../components/Input'
+
   export default {
     components: {
-      Input,
     }
   }
 </script>
@@ -23,6 +22,11 @@
 <style lang="css" scoped>
   * {
     font-family: "Mukta";
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
   }
 
   .welcomeText {
@@ -44,4 +48,5 @@
     border-radius: 25px;
     border: 4px solid white;
   }
+
 </style>

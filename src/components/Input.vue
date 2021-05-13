@@ -2,7 +2,7 @@
   <form action="index.html" method="post">
     <div>
       <input type="text" name="searchBox" placeholder="Search here...">
-      <button type="submit" name="button">🔎︎</button>
+      <button type="submit" name="button"><span class="material-icons md-36">search</span></button>
     </div>
   </form>
 </template>
@@ -22,6 +22,7 @@
     max-width: 650px;
     height: 70px;
     margin: 0em auto;
+    margin-top: 50px;
     position: relative;
     overflow: hidden;
     border-radius: 25px;
@@ -54,10 +55,15 @@
     height: 70px;
     width: 70px;
     right: 0px;
+    padding-top: 7px;
     color: lightgray;
-    transform-origin: center;
-    transform: rotate(-90deg);
     font-size: 30px;
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 0px 25px 25px 0px;
+    transition: 0.2s background;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #000000;
   }
 </style>

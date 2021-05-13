@@ -37,7 +37,7 @@ There is also a suggestion tab to help add or correct information about a produc
 npm install
 ```
 
-Install MongoDB from the [Oafficial Site](https://www.mongodb.com/try/download/community)
+Install MongoDB from the [Official Site](https://www.mongodb.com/try/download/community)
 
 ## Startup of app
 
