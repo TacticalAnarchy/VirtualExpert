@@ -1,8 +1,10 @@
 <template>
   <div>
     <span>Admin Page</span>
+    <!-- Input Fields -->
     <div class="flex">
       <input type="text" placeholder="Title">
+      <!-- Larger Input Fields -->
       <div class="resize">
         <input class="resize" type="text" placeholder="desc">
       </div>
@@ -16,7 +18,8 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+  // Title
   div{
     font-family: "Mukta";
     span {
@@ -27,12 +30,15 @@
       margin: 20px 0px;
     }
   }
+
+  //Input Fields Structure 
   .flex{
     display: flex;
     flex-wrap: wrap;
     width:100%;
     justify-content: center;
     
+    // Common Input Fields
     input{
       font-size: 1em;
       box-shadow: 5px 5px 7px #212121;
@@ -42,6 +48,7 @@
       margin: 0 20px;
     }
 
+    //Expandable input (For Larger Inputs)
     div.resize{
       background-color: #212121;
       resize: vertical;

@@ -1,4 +1,5 @@
 <template>
+<div>
   <Input />
   <router-link to="VirtualExpert">to virtual expert</router-link>
   <router-link to="Search">to Search</router-link>
@@ -10,6 +11,8 @@
       </keep-alive>
     </transition>
   </router-view>
+</div>
+
 </template>
 
 <script>
