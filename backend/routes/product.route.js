@@ -14,7 +14,7 @@ productRoute.route('/').get((req, res) => {
    })
  })
 
- productRoute.route('/create-student').post((req, res, next) => {
+ productRoute.route('/create-product').post((req, res, next) => {
     ProductsModel.create(req.body, (error, data) => {
     if (error) {
       return next(error)
@@ -24,7 +24,7 @@ productRoute.route('/').get((req, res) => {
   })
 });
 
-productRoute.route('/edit-student/:id').get((req, res) => {
+productRoute.route('/edit-product/:id').get((req, res) => {
    ProductsModel.findById(req.params.id, (error, data) => {
     if (error) {
       return next(error)
@@ -35,7 +35,7 @@ productRoute.route('/edit-student/:id').get((req, res) => {
 })
 
 // Update student
-productRoute.route('/update-student/:id').post((req, res, next) => {
+productRoute.route('/update-product/:id').post((req, res, next) => {
   ProductsModel.findByIdAndUpdate(req.params.id, {
     $set: req.body
   }, (error, data) => {
@@ -49,7 +49,7 @@ productRoute.route('/update-student/:id').post((req, res, next) => {
 })
 
 // Delete student
-productRoute.route('/delete-student/:id').delete((req, res, next) => {
+productRoute.route('/delete-product/:id').delete((req, res, next) => {
   ProductsModel.findByIdAndRemove(req.params.id, (error, data) => {
     if (error) {
       return next(error);
