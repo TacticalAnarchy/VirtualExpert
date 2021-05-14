@@ -1,15 +1,16 @@
 <template>
-  <Input />
-  <router-link to="VirtualExpert">to virtual expert</router-link>
-  <router-link to="Search">to Search</router-link>
+  <div>
+    <Input />
+    <router-link to="VirtualExpert">to virtual expert</router-link>
+    <router-link to="Search">to Search</router-link>
 
-  <router-view v-slot="{ Component }">
-    <transition name="fade" mode="out-in">
-      <keep-alive>
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
         <component :is=" Component " />
-      </keep-alive>
-    </transition>
-  </router-view>
+      </transition>
+    </router-view>
+  </div>
+
 </template>
 
 <script>
