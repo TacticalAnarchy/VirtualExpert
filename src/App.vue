@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Input />
+    <!--Input /-->
     <router-link to="VirtualExpert">to virtual expert</router-link>
     <router-link to="Search">to Search</router-link>
 
