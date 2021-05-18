@@ -1,17 +1,17 @@
 <template>
   <div>
     <span>Edit Product</span>
-    <form action="POST">
+    <form action="POST" @submit.prevent="handleSubmitForm">
       <!-- Input Fields -->
       <div class="flex">
         <div class="inputCont">
           <label>Title:</label>
-          <input type="text" placeholder="Visible Title" />
+          <input type="text" placeholder="Visible Title" v-model="title" />
         </div>
         <!-- Larger Input Fields -->
         <div class="inputCont">
           <label>Key:</label>
-          <input type="text" placeholder="Keywords" />
+          <input type="text" placeholder="Keywords" v-model="key" />
         </div>
         <div class="resize inputCont">
           <label>Desc:</label>
@@ -19,38 +19,31 @@
             class="resize"
             placeholder="Description of the product"
             type="text"
+            v-model="desc"
           />
         </div>
       </div>
-      <input
-        id="submit"
-        type="submit"
-        value="Submit"
-        @submit.prevent="handleUpdateForm"
-        placeholder="Update"
-      />
+      <input id="submit" type="submit" value="Submit" placeholder="Update" />
     </form>
   </div>
 </template>
 
 <script>
 import axios from "axios";
+
 export default {
   data() {
-    return {
-      sku: { title: "", key: "", desc: "" },
-    };
+    return { title: "", key: "", desc: "" };
   },
   methods: {
     handleSubmitForm() {
-      console.log("running");
       let apiURL = "http://localhost:4000/api/create-product";
 
+      let output = { title: this.title, key: this.key, desc: this.desc };
       axios
-        .post(apiURL, this.sku)
+        .post(apiURL, output)
         .then(() => {
           this.$router.push("/view");
-          this.sku = { title: "", key: "", desc: "" };
         })
         .catch((error) => {
           console.log(error);

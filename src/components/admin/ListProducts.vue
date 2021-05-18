@@ -5,20 +5,20 @@
         <tr>
           <th>Title</th>
           <th>Key</th>
-          <th>Desk</th>
+          <th>Description</th>
+          <th>Sku</th>
           <th>Actions</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="student in Students" :key="student._id">
-          <td>{{ product.title }}</td>
-          <td>{{ student.key }}</td>
-          <td>{{ student.desc }}</td>
+        <tr v-for="Products in Products" :key="Products._id">
+          <td>{{ Products.title }}</td>
+          <td>{{ Products.key }}</td>
+          <td>{{ Products.desc }}</td>
+          <td></td>
           <td>
-            <router-link :to="{ name: 'edit', params: { id: student._id } }"
-              >Edit</router-link
-            >
-            <button @click.prevent="deleteStudent(student._id)">Delete</button>
+            <button @click="edit(Products._id)">Edit</button>
+            <!--button @click.prevent="deleteProduct(Products._id)">Delete</button-->
           </td>
         </tr>
       </tbody>
@@ -32,7 +32,7 @@ import axios from "axios";
 export default {
   data() {
     return {
-      sku: [],
+      Products: [],
     };
   },
   created() {
@@ -46,21 +46,28 @@ export default {
         console.log(error);
       });
   },
+  // TODO: Enable Edit and Deletion of Proudcts
   methods: {
-    deleteStudent(id) {
+    deleteProduct(id) {
       let apiURL = `http://localhost:4000/api/delete-student/${id}`;
-      let indexOfArrayItem = this.Students.findIndex((i) => i._id === id);
+      let indexOfArrayItem = this.Products.findIndex((i) => i._id === id);
 
       if (window.confirm("Do you really want to delete?")) {
         axios
           .delete(apiURL)
           .then(() => {
-            this.Students.splice(indexOfArrayItem, 1);
+            this.Products.splice(indexOfArrayItem, 1);
           })
           .catch((error) => {
             console.log(error);
           });
       }
+    },
+
+    edit(id) {
+      let editURL = "http://localhost/EditComponent?id=" + id;
+      // TODO: Add router here to change component to edit component
+      this.$router.push(editURL);
     },
   },
 };

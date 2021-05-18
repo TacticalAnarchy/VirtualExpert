@@ -14,6 +14,7 @@ productRoute.route("/").get((req, res) => {
   });
 });
 
+// Create Product
 productRoute.route("/create-product").post((req, res, next) => {
   ProductsModel.create(req.body, (error, data) => {
     if (error) {
@@ -24,7 +25,8 @@ productRoute.route("/create-product").post((req, res, next) => {
   });
 });
 
-productRoute.route("/edit-product/:id").get((req, res) => {
+// Edit Product
+productRoute.route("/edit-product/").get((req, res) => {
   ProductsModel.findById(req.params.id, (error, data) => {
     if (error) {
       return next(error);
@@ -34,7 +36,7 @@ productRoute.route("/edit-product/:id").get((req, res) => {
   });
 });
 
-// Update student
+// Update product
 productRoute.route("/update-product/:id").post((req, res, next) => {
   ProductsModel.findByIdAndUpdate(
     req.params.id,
@@ -52,7 +54,7 @@ productRoute.route("/update-product/:id").post((req, res, next) => {
   );
 });
 
-// Delete student
+// Delete product
 productRoute.route("/delete-product/:id").delete((req, res, next) => {
   ProductsModel.findByIdAndRemove(req.params.id, (error, data) => {
     if (error) {

@@ -26,6 +26,11 @@ const routes = [
     name: "view",
     component: () => import("../components/admin/ListProducts"),
   },
+  {
+    path: "/EditComponent",
+    name: "EditComponent",
+    component: () => import("../components/admin/EditComponent"),
+  },
 ];
 
 const router = createRouter({
